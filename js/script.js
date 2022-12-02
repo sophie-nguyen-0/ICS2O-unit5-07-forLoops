@@ -22,9 +22,8 @@ function myButtonClicked() {
   let sum = 0
 
   for (let count = 1; count < num; count++) {
-    sum += count;
+    sum += count
   }
 
   document.getElementById("answer").innerHTML = "your answer is: " + sum + "."
-
 }
