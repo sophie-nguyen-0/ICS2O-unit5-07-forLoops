@@ -17,5 +17,14 @@ if (navigator.serviceWorker) {
  * this function
  */
 function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
+  const num = parseInt(document.getElementById("num").value) + 1
+
+  let sum = 0
+
+  for (let count = 1; count < num; count++) {
+    sum += count;
+  }
+
+  document.getElementById("answer").innerHTML = "your answer is: " + sum + "."
+
 }
