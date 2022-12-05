@@ -17,11 +17,11 @@ if (navigator.serviceWorker) {
  * this function
  */
 function myButtonClicked() {
-  const num = parseInt(document.getElementById("num").value) + 1
+  const num = parseInt(document.getElementById("num").value)
 
   let sum = 0
 
-  for (let count = 1; count < num; count++) {
+  for (let count = 1; count < num || count == num; count++) {
     sum += count
   }
 
